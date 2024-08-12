@@ -52,7 +52,7 @@ def extract_schema_from_list(lst):
         seen_schemas[schema_str] = merged_schema
         return merged_schema
 def main():
-    json_file = "C:/Code/fl_doh_parse/dialog-skill.json"  # replace with your JSON file
+    json_file = "C:/Code/dialog-skill.json"  # replace with your JSON file
     schema = extract_schema(json_file)
     with open('schema.txt', 'w') as f:
         json.dump(schema, f, indent=4)
